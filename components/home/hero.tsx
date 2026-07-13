@@ -72,49 +72,32 @@ export function Hero() {
         className="relative z-20 mx-auto flex w-full max-w-6xl flex-col items-center px-4 text-center md:px-6"
       >
         <motion.p
-          initial={{ opacity: 0, y: 24 }}
+          initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 0.2 }}
-          className="text-xs uppercase tracking-[0.4em] text-white/90"
+          transition={{ duration: 1, delay: 0.25 }}
+          className="text-xs uppercase tracking-[0.5em] text-white/90 font-sans"
         >
-          Flora Wedding Planners
+          Flora
         </motion.p>
         <motion.h1
-          initial={{ opacity: 0, y: 32 }}
+          initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.1, delay: 0.45 }}
-          className="mt-6 max-w-4xl font-serif text-5xl font-medium leading-[1.05] text-white text-balance md:text-7xl lg:text-8xl"
+          transition={{ duration: 1.1, delay: 0.5 }}
+          className="mt-3 font-serif text-6xl sm:text-7xl md:text-8xl lg:text-[10rem] font-extralight tracking-[0.18em] uppercase italic text-white leading-[0.95]"
         >
-          Every love story deserves a beautiful telling
+          Weddings
         </motion.h1>
         <motion.p
-          initial={{ opacity: 0, y: 24 }}
+          initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 0.75 }}
-          className="mt-6 max-w-xl text-base leading-relaxed text-white/85 text-pretty md:text-lg"
+          transition={{ duration: 1.1, delay: 0.75 }}
+          className="mt-8 max-w-xl font-serif text-lg sm:text-xl md:text-2xl text-white/90 font-light leading-relaxed italic text-balance"
         >
-          From whispered vows to grand celebrations, we craft weddings that feel like the
-          stories they come from — yours.
+          We don’t just celebrate life, we celebrate love
+          <span className="block mt-2 text-xs sm:text-sm tracking-[0.25em] uppercase not-italic text-white/70">
+            because love is the heart of everything
+          </span>
         </motion.p>
-        <motion.div
-          initial={{ opacity: 0, y: 24 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 1 }}
-          className="mt-10 flex flex-col items-center gap-4 sm:flex-row"
-        >
-          <Link
-            href="/contact"
-            className="rounded-full bg-primary px-8 py-4 text-xs uppercase tracking-[0.25em] text-primary-foreground shadow-lg transition-transform hover:scale-105"
-          >
-            Contact Us
-          </Link>
-          <Link
-            href="/gallery"
-            className="rounded-full border border-white/50 px-8 py-4 text-xs uppercase tracking-[0.25em] text-white transition-colors hover:bg-white/10"
-          >
-            View Our Work
-          </Link>
-        </motion.div>
       </motion.div>
 
       {/* Down arrow scroll indicator */}

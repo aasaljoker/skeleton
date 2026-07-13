@@ -37,7 +37,7 @@ export function PageHero({
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.3 }}
-          className={`text-xs uppercase tracking-[0.4em] ${image ? 'text-white/70' : 'text-accent'}`}
+          className={`text-xs uppercase tracking-[0.45em] ${image ? 'text-white/80' : 'text-accent'}`}
         >
           {eyebrow}
         </motion.p>
@@ -45,7 +45,7 @@ export function PageHero({
           initial={{ opacity: 0, y: 28 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, delay: 0.5 }}
-          className={`mt-4 max-w-3xl font-serif text-5xl font-medium text-balance md:text-6xl ${image ? 'text-white' : 'text-secondary-foreground'}`}
+          className={`mt-4 max-w-4xl font-serif text-4xl font-light leading-[1.1] text-balance md:text-6xl lg:text-7xl ${image ? 'text-white' : 'text-secondary-foreground'}`}
         >
           {title}
         </motion.h1>
@@ -54,7 +54,7 @@ export function PageHero({
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.7 }}
-            className={`mt-5 max-w-xl text-sm leading-relaxed text-pretty md:text-base ${image ? 'text-white/85' : 'text-secondary-foreground/80'}`}
+            className={`mt-6 max-w-xl text-sm leading-relaxed text-pretty md:text-base ${image ? 'text-white/85' : 'text-secondary-foreground/80'}`}
           >
             {description}
           </motion.p>

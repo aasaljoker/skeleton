@@ -1,36 +1,29 @@
 import { Hero } from '@/components/home/hero'
 import { StageReveal } from '@/components/home/stage-reveal'
+import { FloraIntro } from '@/components/home/flora-intro'
 import { StorySection, WordCinema } from '@/components/home/story-section'
 import { ServicesPreview } from '@/components/home/services-preview'
+import { GalleryPreview } from '@/components/home/gallery-preview'
 import { Testimonials } from '@/components/home/testimonials'
 import { ContactForm } from '@/components/contact-form'
 import { FadeIn } from '@/components/motion-primitives'
-import { FloatingRings } from '@/components/home/floating-rings'
 import { InteractiveInvite } from '@/components/home/interactive-invite'
+import { HowItWorks } from '@/components/home/how-it-works'
+import { ConsultationCta } from '@/components/home/consultation-cta'
 
 export default function HomePage() {
   return (
     <main>
       <Hero />
       <StageReveal />
+      <FloraIntro />
       <StorySection />
       <WordCinema />
       <ServicesPreview />
+      <GalleryPreview />
       
-      {/* 3D Rings Section */}
-      <section className="bg-primary/5 py-24 md:py-32 relative overflow-hidden">
-        <div className="mx-auto max-w-6xl px-4 md:px-6 text-center">
-          <FadeIn>
-            <p className="text-xs uppercase tracking-[0.35em] text-accent">The Symbol</p>
-            <h2 className="mt-4 font-serif text-4xl font-medium text-balance md:text-5xl">
-              A promise forged in gold
-            </h2>
-          </FadeIn>
-          <div className="relative mt-12 h-[60vh] min-h-[400px] w-full max-w-4xl mx-auto rounded-3xl overflow-hidden shadow-2xl bg-[#5E4E42]/5">
-            <FloatingRings className="h-full w-full absolute inset-0" />
-          </div>
-        </div>
-      </section>
+      {/* How It Works Section */}
+      <HowItWorks />
 
       {/* 3D Invite Section */}
       <section className="bg-secondary py-24 md:py-32 relative overflow-hidden">
@@ -52,6 +45,7 @@ export default function HomePage() {
       </section>
 
       <Testimonials />
+      <ConsultationCta />
       
       <section className="bg-background py-24 md:py-32">
         <div className="mx-auto grid max-w-6xl gap-12 px-4 md:grid-cols-2 md:px-6">

@@ -1,6 +1,7 @@
 import { Analytics } from '@vercel/analytics/next'
 import type { Metadata, Viewport } from 'next'
 import { Cormorant_Garamond, Jost } from 'next/font/google'
+import localFont from 'next/font/local'
 import { SiteHeader } from '@/components/site-header'
 import { SiteFooter } from '@/components/site-footer'
 import './globals.css'
@@ -15,6 +16,12 @@ const cormorant = Cormorant_Garamond({
 const jost = Jost({
   subsets: ['latin'],
   variable: '--font-jost',
+})
+
+const classico = localFont({
+  src: '../public/fonts/classico-webfont.woff2',
+  variable: '--font-classico',
+  display: 'swap',
 })
 
 export const metadata: Metadata = {
@@ -35,7 +42,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={`bg-background ${cormorant.variable} ${jost.variable}`}>
+    <html lang="en" className={`bg-background ${cormorant.variable} ${jost.variable} ${classico.variable}`}>
       <body className="antialiased font-sans">
         <SiteHeader />
         {children}
